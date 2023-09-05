@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">                                                        <!-- Title in the tab -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI: Logistics Login Page</title>
+    <link href="login-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- start of navigation bar wrapper -->
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="Home.html"> Home </a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="placer.html"> The Team </a>
+                </div> <!-- closing left nav teams link  -->
+            </div> <!-- closing left nav -->
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="Login.html"> Sign In </a>
+                </div>              
+            </div>
+                        
+        </div>
+        <!-- start of login form container -->
+        <div class="login-box">
+            
+            <div class="sign-in-header"> 
+                Login      
+            </div>
+            
+            <form action="process-login.php" method="post">
+    
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder= "Username" name="username" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="password" name="password" required>
+                </div>
+    
+                <button class="animated-submit-button">                               <!-- submit button -->                       
+                    <span>Login</span>
+                    <span></span>
+                </button>
+    
+            </form>
+        </div> <!-- closing div form -->
+    </div>
+</body>
+
+</html>
